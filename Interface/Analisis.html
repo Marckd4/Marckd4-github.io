@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <script src="/Assets/JS/analisis.js"></script>
+    <link rel="stylesheet" href="/Interface/analisis.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<header class="contenedor-header">
+    <header>
+        <div class="logo">
+            <div class=logoImg>
+                <img src="/Assets/imagen/logo2.png" alt="">
+                <a href="/inicio.html">Inventario Chilean Trading</a>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="/inicio.html">Inicio</a></li>
+                <li><a href="/sesion/sesion.html">Usuario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</header>
+
+<body>
+    <h1>Analizador de Excel en la Web</h1>
+    <input type="file" id="fileInput" />
+    <button onclick="selectFile()">Analizar y Consolidar Excel</button>
+    <button class="hidden" id="downloadBtn" onclick="downloadFile()">Descargar Archivo Consolidado</button>
+
+    <h2>Resultados del Análisis</h2>
+    <div id="output"></div>
+    <div class="fondo">
+        <img src="/imagen/slider.jpg" alt="">
+    </div>
+</body>
+
+</html>
